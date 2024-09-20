@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone repository') {
             steps {
-                git 'https://github.com/MichaelCaukill/Apply4A.git'
+                git branch: 'main', url: 'https://github.com/MichaelCaukill/Apply4A.git'
             }
         }
         stage('Build Docker Image') {
